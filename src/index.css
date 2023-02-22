@@ -10,11 +10,11 @@
 }
 
 .open {
-  animation: _bounceIn 0.4s both;
+  animation: _bounceIn 0.4s;
 }
 
 .close {
-  animation: _bounceOut 0.4s both;
+  animation: _bounceOut 0.4s;
 }
 
 @keyframes _pulse {

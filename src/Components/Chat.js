@@ -11,6 +11,7 @@ export default function Chat() {
   const handleChatIcon = () => {
     setChatBody(!chatBody);
   };
+  
   return (
     <Box
       sx={{
@@ -50,8 +51,7 @@ export default function Chat() {
             borderRadius: "16px",
             overflow: "hidden",
           }}
-          // className={`${chatBody && "close"} ${!chatBody && "open"}`}
-          className="open"
+          className={`${chatBody && `open`} ${!chatBody && `close`}`}
         >
           <Box
             sx={{

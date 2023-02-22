@@ -18,7 +18,7 @@ export function CheckSVG() {
     </svg>
   );
 }
-export function CloseSVG() {
+export const CloseSVG=()=> {
   return (
     <svg
       width="24"
@@ -57,7 +57,7 @@ export function SendSVG() {
     </svg>
   );
 }
-export function Message() {
+export const Message=()=>{
   return (
     <svg
       width="35"
@@ -81,3 +81,4 @@ export function Message() {
     </svg>
   );
 }
+
