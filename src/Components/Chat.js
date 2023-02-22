@@ -11,7 +11,7 @@ export default function Chat() {
   const handleChatIcon = () => {
     setChatBody(!chatBody);
   };
-  
+
   return (
     <Box
       sx={{
@@ -37,6 +37,7 @@ export default function Chat() {
             background:
               "linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 100%)",
             borderRadius: "100px",
+            cursor: "pointer",
           }}
           onClick={handleChatBody}
         >
@@ -59,7 +60,10 @@ export default function Chat() {
               justifyContent: "space-between",
               gap: 2,
               alignItems: "center",
-              p: 1,
+              pl: 2,
+              pr: 2,
+              pt: 1,
+              pb: 1,
               background:
                 "linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.8) 100%)",
               boxShadow: "0px 0px 20px rgba(0, 0, 0, 0.08)",
@@ -84,7 +88,7 @@ export default function Chat() {
                 Personal Robot of author
               </Typography>
             </Box>
-            <Box onClick={handleChatIcon}>
+            <Box onClick={handleChatIcon} sx={{ cursor: "pointer" }}>
               <CloseSVG />
             </Box>
           </Box>
