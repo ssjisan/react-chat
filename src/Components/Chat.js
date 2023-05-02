@@ -133,7 +133,7 @@ export default function Chat() {
                     sx={{
                       fontWeight: 400,
                       fontSize: "14px",
-                      color: "#9397AD",
+                      color: "#141414",
                     }}
                   >
                     Hi, I'm ssj_bot. I am a personal assistant of Sadman Sakib
@@ -192,7 +192,6 @@ export default function Chat() {
                   5 minutes ago
                 </Typography>
               </Box>
-              <img src="Logo.png" alt="bot" height="32px" />
             </Box>
             <Box sx={{ mt: 4, display: "flex", gap: 2 }}>
               <img src="Logo.png" alt="bot" height="32px" />
@@ -216,7 +215,7 @@ export default function Chat() {
                     sx={{
                       fontWeight: 400,
                       fontSize: "14px",
-                      color: "#9397AD",
+                      color: "#141414",
                     }}
                   >
                     +8801675893967
