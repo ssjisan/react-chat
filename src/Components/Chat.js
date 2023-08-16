@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { CloseSVG, Message } from "./Icons";
 import Question from "./Question";
 
@@ -11,7 +11,11 @@ export default function Chat() {
   const handleChatIcon = () => {
     setChatBody(!chatBody);
   };
+const dummy=useRef(null)
 
+const scrollToBottom = () => {
+  dummy?.current?.scrollIntoView({ behavior: 'smooth' });
+};
   return (
     <Box
       sx={{
@@ -234,8 +238,9 @@ export default function Chat() {
               </Box>
             </Box>
             <Question />
+            <div ref={dummy}></div>
           </Box>
-          <Box sx={{ p: 1 }}>
+          <Box sx={{ p: 1 }} onClick={scrollToBottom}>
             <Typography
               sx={{ textAlign: "center", fontSize: "12px", color: "#CECECE" }}
             >
